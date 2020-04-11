@@ -1,15 +1,48 @@
 # Awesome Deep Reinforcement Learning
 
-Join our [slack channel](https://join.slack.com/t/universityai/shared_invite/enQtNjk1ODExMzM5Mjg1LTA5YTYyOGNkNDA3ZmQyMzI3MDFjN2EzYjgxZmRlZmUxZWY0ODIzOWZhODhhNTE3ODAxNmI1ZTNjYzI0ZmYwNDc) to have deeper discussions.
-
-updated Landscape of **DRL**
 
 ![updated Landscape of **DRL**](images/awesome-drl.png)
 
 Landscape of **DRL**
 
-![Landscape of **DRL**/GAN](images/landscape.jpeg)
+[Landscape of **DRL**/GAN](images/landscape.jpeg)
 This project is built for people who are learning and researching on latest deep reinforcement learning methods.
+
+## Content
+- [General guidances](#general-guidances)
+- [Foundations and theory](#foundations-and-theory)
+- [General Benchmark Testing Frameworks](#general-benchmark-testing-frameworks)
+- [Value based](#value-based)
+- [Policy gradient](#policy-gradient)
+- [Explorations](#explorations)
+- [Actor-Critic](#acctor-critic)
+- [Model-based](#model-based)
+- [Model-free + Model-based](#model-free-+-model-based)
+- [Hierarchical](#hieracrchical)
+- [Option](#option)
+- [Connection with other methods](#connection-with-other-methods)
+- [Connecting value and policy](#connecting-value-and-policy)
+- [Reward design](#reward-design)
+- [Unifying](#unifying)
+- [Faster DRL](#faster-drl)
+- [Multi-agent](#multi-agent)
+- [New design](#new-design)
+- [Multitask](#multitask)
+- [Observational Learning](#observational-learning)
+- [Meta Learning](#meta-learning)
+- [Distributional](#distributional)
+- [Planning](#planning)
+- [Safety](#safety)
+- [Inverse RL](#inverse-rl)
+- [No reward RL](#no-reward-rl)
+- [Time](#time)
+- [Applications](#applications)
+- [Adversarial learning](#adversarial-learning)
+- [Natural Language](#natural-Language)
+- [Generative and contrastive representation learning](#generative-and-contrastive-representation-learning)
+- [Belief](#belief)
+- [PAC](#pac)
+- [Applications](#applications)
 
 Illustrations:
 
@@ -36,6 +69,8 @@ Illustrations:
 
 ## General Benchmark Testing Frameworks
 
+* [Chainerrl Visualizer](https://github.com/chainer/chainerrl-visualizer)
+* [Behaviour Suite for Reinforcement Learning](BSRL.md) 13 Aug 2019 [arxiv](https://arxiv.org/pdf/1908.03568.pdf) | [code](https://github.com/deepmind/bsuite)
 * [Quantifying Generalization in Reinforcement Learning](Coinrun.md) 20 Dec 2018 [arxiv](https://arxiv.org/pdf/1812.02341.pdf)
 * [S-RL Toolbox: Environments, Datasets and Evaluation Metrics for State Representation Learning](SRL.md) 25 Sept 2018
 * [dopamine](https://github.com/google/dopamine)
@@ -44,8 +79,7 @@ Illustrations:
 * [chainerrl](https://github.com/chainer/chainerrl)
 * [PARL](https://github.com/PaddlePaddle/PARL) 
 
-## Value based methods
-
+## Value based
 
 * [Recurrent Value Functions](RVF.md) 23 May 2019 [arxiv](https://arxiv.org/pdf/1905.09562.pdf)
 * [Stochastic Lipschitz Q-Learning](LipschitzQ.md) 24 Apr 2019 [arxiv](https://arxiv.org/pdf/1904.10653.pdf)
@@ -58,7 +92,7 @@ Illustrations:
 * [Prioritized Experience](PER.md)
 * [Deep Q-Networks](DQN.md)
 
-## Policy gradient methods
+## Policy gradient
 
 * [Direct Policy Gradients: Direct Optimization of Policies in Discrete Action Spaces](DirPG.md) [arxiv](https://arxiv.org/pdf/1906.06062.pdf)
 * [Policy Gradient Search: Online Planning and Expert Iteration without Search Trees](PGS.md) 7 Apr 2019 [arxiv](https://arxiv.org/pdf/1904.03646.pdf)
@@ -74,8 +108,7 @@ Illustrations:
 * [Reinforcement Learning with Deep Energy-Based Policies](DEBP.md)
 * [Q-PROP: SAMPLE-EFFICIENT POLICY GRADIENT WITH AN OFF-POLICY CRITIC](QPROP.md)
 
-
-## Explorations in DRL
+## Explorations
 
 * [Self-Supervised Exploration via Disagreement](Disagreement.md) 10 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.04161.pdf)
 * [Approximate Exploration through State Abstraction](MBIE-EB.md) 24 Jan 2019
@@ -88,7 +121,7 @@ Illustrations:
 * [Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models](incentivizing.md)
 * [EX2: Exploration with Exemplar Models for Deep Reinforcement Learning](EX2.md)
 
-## Actor-Critic methods
+## Actor-Critic
 
 * [Generalized Off-Policy Actor-Critic](Geoff-PAC.md) 27 Mar 2019
 * [Soft Actor-Critic Algorithms and Applications](https://arxiv.org/pdf/1812.05905.pdf) 29 Jan 2019
@@ -97,7 +130,7 @@ Illustrations:
 * [REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS](UNREAL.md)
 * [Continuous control with deep reinforcement learning](DDPG.md)
 
-## Model-based methods
+## Model-based
 
 * [When to use parametric models in reinforcement learning?](parametric.md) 12 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.05243.pdf)
 * [Model Based Reinforcement Learning for Atari](https://arxiv.org/pdf/1903.00374.pdf) 5 Mar 2019
@@ -110,6 +143,7 @@ Illustrations:
 
 ## Hierarchical
 
+* [WHY DOES HIERARCHY (SOMETIMES) WORK SO WELL IN REINFORCEMENT LEARNING?](HIRO.md) 23 Sep 2019 [arxiv](https://arxiv.org/pdf/1909.10618.pdf) 
 * [Language as an Abstraction for Hierarchical Deep Reinforcement Learning](HAL.md) 18 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.07343.pdf)
 
 ## Option
@@ -141,15 +175,14 @@ Illustrations:
 
 * [Neural Episodic Control](NEC.md)
 
-## Apply RL to other domains
+## Multi-agent
 
-* [TUNING RECURRENT NEURAL NETWORKS WITH REINFORCEMENT LEARNING](RLTUNER.md)
-
-## Multiagent Settings
-
+* [No Press Diplomacy: Modeling Multi-Agent Gameplay](Dip.md) 4 Sep 2019 [arxiv](https://arxiv.org/pdf/1909.02128.pdf)
+* [Options as responses: Grounding behavioural hierarchies in multi-agent RL](OPRE) 6 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.01470.pdf)
 * [Evolutionary Reinforcement Learning for Sample-Efficient Multiagent Coordination](MERL.md) 18 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.07315.pdf)
 * [A Regularized Opponent Model with Maximum Entropy Objective](ROMMEO.md) 17 May 2019 [arxiv](https://arxiv.org/pdf/1905.08087.pdf)
 * [Deep Q-Learning for Nash Equilibria: Nash-DQN](NashDQN.md) 23 Apr 2019 [arxiv](https://arxiv.org/pdf/1904.10554.pdf)
+* [Malthusian Reinforcement Learning](MRL.md) 3 Mar 2019 [arxiv](https://arxiv.org/pdf/1812.07019.pdf)
 * [Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning](bad.md) 4 Nov 2018
 * [INTRINSIC SOCIAL MOTIVATION VIA CAUSAL INFLUENCE IN MULTI-AGENT RL](ISMCI.md) 19 Oct 2018
 * [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/rashidicml18.pdf) 30 Mar 2018
@@ -180,8 +213,11 @@ Illustrations:
 
 ## Meta Learning
 
+* [Discovery of Useful Questions as Auxiliary Tasks](GVF.md) 10 Sep 2019 [arxiv](https://arxiv.org/pdf/1909.04607.pdf)
 * [Meta-learning of Sequential Strategies](MetaSS.md) 8 May 2019 [arxiv](https://arxiv.org/pdf/1905.03030.pdf)
 * [Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables](PEARL.md) 19 Mar 2019 [arxiv](https://arxiv.org/pdf/1903.08254.pdf)
+* [Some Considerations on Learning to Explore via Meta-Reinforcement Learning](E2.md) 11 Jan 2019 [arxiv](https://arxiv.org/pdf/1803.01118.pdf)
+* [Meta-Gradient Reinforcement Learning](MGRL.md) 24 May 2018 [arxiv](https://arxiv.org/pdf/1805.09801.pdf)
 * [ProMP: Proximal Meta-Policy Search](ProMP.md) 16 Oct 2018 [arxiv](https://arxiv.org/pdf/1810.06784)
 * [Unsupervised Meta-Learning for Reinforcement Learning](UML.md) 12 Jun 2018
 
@@ -215,10 +251,8 @@ Illustrations:
 
 ## Time
 
+* [Interval timing in deep reinforcement learning agents](Intervaltime.md) 31 May 2019 [arxiv](https://arxiv.org/pdf/1905.13469.pdf)
 * [Time Limits in Reinforcement Learning](PEB.md)
-
-## Applications
-* [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](dmimic.md) 9 Apr 2018
 
 ## Adversarial learning
 
@@ -235,3 +269,12 @@ Illustrations:
 ## Belief
 
 * [Shaping Belief States with Generative Environment Models for RL](GenerativeBelief.md) 24 Jun 2019 [arxiv](https://arxiv.org/pdf/1906.09237v2.pdf)
+
+## PAC
+* [Provably Convergent Off-Policy Actor-Critic with Function Approximation](COF-PAC.md) 11 Nov 2019 [arxiv](https://arxiv.org/pdf/1911.04384.pdf)
+
+
+## Applications
+* [Learning Reciprocity in Complex Sequential Social Dilemmas](Reciprocity.md) 19 Mar 2019 [arxiv](https://arxiv.org/pdf/1903.08082.pdf)
+* [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](dmimic.md) 9 Apr 2018
+* [TUNING RECURRENT NEURAL NETWORKS WITH REINFORCEMENT LEARNING](RLTUNER.md)
